@@ -1,0 +1,122 @@
+/* ESTRUTURAÇÃO PÁGINA BODY */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    background-color: #bdc3b0;
+    background: url('backgroundadm.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* DIVS FORMS LOGIN */
+  
+  /* DIV FLEX (CONTROLA TODAS AS DIVS DENTRO DA PÁGINA)*/
+  
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* DIV TELA LOGIN (CONTROLA APENAS O QUADRADO DA TELA DE LOGIN) */
+  
+  .container {
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    max-height: 365px;
+    font-family: "Montserrat alternates", sans-serif;
+    text-align: center;
+    color: white;
+    background-color: #023412;
+    /* border: 7.5px solid #00511F;; */
+    border-radius: 6px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+  
+  #h2login {
+    font-family: "Montserrat Alternates", sans-serif;
+  }
+  
+  /* INPUT BUTTON */
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #2bd131;
+    background-color: #fff;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="password"] {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* LOGIN BUTTON */
+  
+  #btnlogin {
+    display: inline-block;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #f8f8f8;
+    width: 200px;
+    border: 0;
+    padding: 3.5px;
+    color: #044606f3;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* LINK USUÁRIO NÃO CADASTRADO */
+  
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Montserrat alternates", sans-serif;
+  }
+  
+  a:hover {
+    color: #07790b;
+  }
+  
+  
+  #btnlogin:hover{
+    background-color: #07790b;
+    color: #ffffff;
+  }
+  
+#h3email, #h3senha {
+margin-right: 10px;
+margin: 0%;
+}
+

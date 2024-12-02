@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encanto Tropical</title>
+    <link rel="stylesheet" href="./style/homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header id="home">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="O que você deseja?">
+                <button>🔍</button>
+            </div class ="logo">
+            <img src="./imgs/logo.png" alt="">
+            <div class="icons">
+                <img src="./imgs/icons/user.png" alt="">
+                <img src="./imgs/icons/shopping-cart.png" alt="">
+                <img src="./imgs/icons/moon.png" alt="" id="theme-toggle" class="theme-icon">
+                <img src="./imgs/icons/chat.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrossel -->
+    <section class="carousel">
+        <button class="carousel-btn prev">‹</button>
+        <img src="./imgs/carrosel.webp" alt="Tropical Vaso 1">
+        <img src="./imgs/carrosel2.jpg" alt="Tropical Vaso 2" style="display: none;">
+        <button class="carousel-btn next">›</button>
+    </section>
+
+    <!-- Categorias -->
+    <section class="categories">
+        <h2>Categorias</h2>
+        <div class="category-container">
+            <div class="category">
+                <img src="./imgs/vasos.png" alt="Vasos">
+                <p>Vasos</p>
+            </div>
+            <div class="category">
+                <img src="./imgs/buques.png" alt="Buquês">
+                <p>Buquês</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="products">
+        <h2>Produtos</h2>
+        <div class="product-columns">
+            <div class="product-column">
+                <div class="product">
+                    <img src="./imgs/greengarden.png" alt="Vaso Green Garden">
+                    <p>Vaso - Green Garden</p>
+                    <p>R$ 150,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/purpletropical.png" alt="Buquê Purple Tropical">
+                    <p>Buquê - Purple Tropical</p>
+                    <p>R$ 180,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/Golden tropical.png" alt="Vaso Golden Tropical">
+                    <p>Vaso - Golden Tropical</p>
+                    <p>R$ 80,00</p>
+                </div>
+            </div>
+            <div class="product-column">
+                <div class="product">
+                    <img src="./imgs/tropicalpink.png" alt="Vaso Sunset Tropical">
+                    <p>Buquê - Tropical Pink</p>
+                    <p>R$ 80,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/translucent.png" alt="Buquê White Blossom">
+                    <p>Vaso - translucent</p>
+                    <p>R$ 100,00</p>
+                </div>
+                <div class="product">
+                    <img src="./imgs/carvalhotropical.png" alt="Vaso Elegant Tropical">
+                    <p>Vaso - Carvalho Tropical</p>
+                    <p>R$ 200,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about">
+        <h2>Sobre Nós</h2>
+        <p>Encanto Tropical é uma loja virtual dedicada à venda de flores tropicais, trazendo a exuberância e a beleza da natureza diretamente para a sua casa.</p>
+    </section>
+
+    <!-- Contato -->
+    <footer>
+        <div class="contact">
+            <h3>Contato</h3>
+            <p>WhatsApp: (81) 96783-4920</p>
+            <p>Email: contato@encantotropicalflores.com.br</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15801.798127762593!2d-34.8703207!3d-8.055543599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a2a565885f%3A0x802b0e52579b84b7!2sRecife%2C%20PE%2C%2050030-230!5e0!3m2!1spt-BR!2sbr!4v1733093058558!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="social-media">
+            <h3>Redes Sociais</h3>
+            <p>Instagram: @encantotropicalflores</p>
+            <p>Facebook: facebook.com/encantotropicalflores</p>
+            <p>Twitter: @encantotropical</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+   <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+    const images = document.querySelectorAll('.carousel img');
+    let currentIndex = 0;
+
+    
+    const sunIcon = './imgs/icons/sun.png'; 
+    const moonIcon = './imgs/icons/moon.png';
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        
+        // Troca o ícone conforme o tema
+        if (body.classList.contains('dark-theme')) {
+            toggleButton.src = sunIcon; 
+        } else {
+            toggleButton.src = moonIcon; 
+        }
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        images[currentIndex].style.display = 'block';
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].style.display = 'block';
+    });
+</script>
+</body>
+</html>
